@@ -200,16 +200,16 @@ img {
     line-height: 120%;
 }
 
-p {
+/* p {
     font-family: 'Roboto', sans-serif !important;
     color: rgba(53, 53, 53, 0.715) !important;
     font-size: 1.4rem !important;
-}
+} */
 
-h4 {
+/* h4 {
     font-weight: 600;
     font-size: 1.8rem !important;
-}
+} */
 
 .readMoreButton a {
     color: white;
@@ -457,4 +457,25 @@ input[type=submit] {
 .footerCopyrights p {
     padding-top: 10px;
     font-size: 1rem !important;
+}
+
+
+
+
+
+
+
+
+
+p {
+    font-family: 'Roboto', sans-serif !important;
+    color: rgba(53, 53, 53, 0.715) !important;
+    font-size: 1.4rem !important;
+}
+h4 {
+    font-weight: 600;
+    font-size: 1.8rem !important;
+}
+.footerGrey p {
+    font-size: 1.1rem !important;
 }
