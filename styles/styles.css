@@ -13,6 +13,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 
+
+
 /* My css starts */
 
 body {
@@ -191,6 +193,9 @@ img {
 
 
 
+/* NOTE: changed font size for h3 and p idividually in first media. Need to make all Ps and Headers the same size */
+/* ############################################ */
+
 
 
 
@@ -204,7 +209,7 @@ img {
     float: left;
     padding-left: 10vw;
     padding-right: 3%;
-    padding-top: 60px;
+    padding-top: 40px;
     position: relative;
 }
 
@@ -228,22 +233,25 @@ img {
 
 
 
-
-
 /* BEHIND THE SCENES FROM SPRING/SUMMER FASHION WEEK row */
 .article.article2 {
     padding-left: 5vw;
 }
 
 .article.article2 h4 {
-    padding-top: 0;
+    padding-top: 20px;
     width: 80%;
     padding-bottom: 20px;
 }
 
 .article.article2 p {
     padding-bottom: 40px;
+    width: 90%;
 }
+
+
+/* ############################################ */
+
 
 
 
@@ -281,6 +289,12 @@ img {
 
 .iconAndText h4 {
     font-size: 1.6rem;
+}
+
+@media (max-width: 1340px) {
+.iconAndText h4 {
+    font-size: 1.3rem;
+}
 }
 
 
@@ -374,7 +388,11 @@ input[type=submit] {
     line-height: 140%;
 }
 
-
+@media (max-width: 1340px) {
+    .contacts {
+        padding: 70px 0 0 30px;
+    }
+}
 
 
 
@@ -428,4 +446,133 @@ h4 {
 }
 .footerGrey p {
     font-size: 1.1rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 1439px) {
+    .highlightsImage {
+        width: 35%;
+    }
+    .contentBox {
+        width: calc(65% - 20px);
+    }
+    .contentBox h3 {
+    font-size: 2.4rem;
+    }
+    .contentBox p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1340px) {
+    .textPhotoGallery {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+    }
+
+    .article {
+        width: 35%;
+        float: right;
+    padding: 0 0 0 20px;
+    }
+
+    .blogImage.image1 {
+        width: 65%;
+        float: left;
+    }
+
+    .article h4 {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .article p {
+        padding-bottom: 40px;
+        width: 100%;
+    }
+
+    .article .readMoreButton {
+        padding-bottom: 60px;
+    }
+
+
+/* second row */
+    .blogImage.image2 {
+        width: 65%;
+        float: left;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .article.article2 {
+        width: 35%;
+        float: right;
+        padding: 0 0 0 20px;
+    }
+
+    .article.article2 h4 {
+        padding-top: 4rem;
+        width: 100%;
+    }
+    
+    .article.article2 p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1290px) {
+    .textPhotoGallery {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        /* used it to change the order.  */
+
+    }
+    .blogImage.image1 {
+        width: 100%;
+        float: left;
+        order: 1;
+    }
+
+    .article {
+        width: 100%;
+        float: left;
+        order: 2;
+        padding-left: 0;
+    }
+
+    .article h4 {
+        padding-top: 2rem;
+    }
+
+    .blogImage.image2 {
+        width: 100%;
+        order: 3;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .article.article2 {
+        width: 100%;
+        order: 4;
+        padding-left: 0;
+    }
+
+    .article.article2 h4 {
+        padding-top: 2rem;
+    }
+
 }
