@@ -748,7 +748,7 @@ img {
         display: block;
         text-align: center;
     }
-    
+
     .wrapper.header span {
         font-size: 6rem;
     }
@@ -770,6 +770,10 @@ img {
     }
 
     .contacts p, .contacts span {
+        font-size: 0.8rem !important;
+    }
+
+    .footerCopyrights p {
         font-size: 0.8rem !important;
     }
 }
