@@ -9,12 +9,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 
-
-
-
-
-/* My css starts */
-
 body {
     font-size: 62.5%;
     font-family: 'Cormorant Garamond', sans-serif;
@@ -24,8 +18,8 @@ body {
     margin: 0 auto;
     max-width: 1280px;
     width: 80%;
-    /* border: 1px solid red; */
 }
+
 .wrapper.header {
     height: 600px;
 }
@@ -42,8 +36,9 @@ img {
     max-width: 100%;
 }
 
-
-
+.hamburgerMenu {
+    display: none;
+}
 
 
 
@@ -78,8 +73,6 @@ img {
 
 
 
-
-
 /* h1 on the home page */
 .wrapper.header h1 {
     font-size: 8.8rem;
@@ -102,9 +95,6 @@ img {
 
 
 
-
-
-
 /* social icons */
 .social-icons {
     float: right;
@@ -122,8 +112,6 @@ img {
 
 
 
-
-
 /* newsArticles section */
 .newsArticles h2 {
     text-align: center;
@@ -136,15 +124,11 @@ img {
     width: calc((100%/3) - (40px/3));
     margin-right: 20px;
     display: block;
-
 }
 
 .gallery li:nth-child(3n + 3) {
     margin-right: 0px;
 }
-
-
-
 
 
 
@@ -168,14 +152,12 @@ img {
 }
 
 .contentBox h3 {
-    /* margin-top: 10px; */
     font-size: 2.3rem;
     padding-bottom: 20px;
 }
 
 .contentBox p {
     font-size: 1.6rem;
-    /* margin-bottom: 20px; */
     font-family: 'Roboto', sans-serif;
     padding-bottom: 40px;
     line-height: 120%;
@@ -191,9 +173,6 @@ img {
 
 
 
-
-
-
 /* "NEW TRENDS TO LOOKOUT FOR" Section styles */
 .textPhotoGallery {
     display: block;
@@ -204,7 +183,7 @@ img {
     float: left;
     padding-left: 10vw;
     padding-right: 3%;
-    padding-top: 60px;
+    padding-top: 40px;
     position: relative;
 }
 
@@ -228,24 +207,21 @@ img {
 
 
 
-
-
 /* BEHIND THE SCENES FROM SPRING/SUMMER FASHION WEEK row */
 .article.article2 {
     padding-left: 5vw;
 }
 
 .article.article2 h4 {
-    padding-top: 0;
+    padding-top: 20px;
     width: 80%;
     padding-bottom: 20px;
 }
 
 .article.article2 p {
     padding-bottom: 40px;
+    width: 90%;
 }
-
-
 
 
 
@@ -261,7 +237,6 @@ img {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
-    /* display: block; */
 }
 
 .iconAndText {
@@ -285,147 +260,517 @@ img {
 
 
 
-
-
+@media (max-width: 1340px) {
+    .iconAndText h4 {
+        font-size: 1.3rem;
+    }
+}
 
 /* Middle part of the footer  */
-.footerGrey {
-    background-color: rgb(227, 227, 227);
-    height: 250px;
-}
+    .footerGrey {
+        background-color: rgb(227, 227, 227);
+        height: 250px;
+    }
 
-.footerGrey p {
-    font-size: 1.1rem !important;
-}
+    .footerGrey p {
+        font-size: 1.1rem !important;
+    }
 
-.footerGrey .wrapper.clearfix {
-    display: block;
-}
+    .footerGrey .wrapper.clearfix {
+        display: block;
+    }
 
-.emailForm {
-    width: 50%;
-    padding: 70px 0 0 0;
-    float: left;
-}
+    .emailForm {
+        width: 50%;
+        padding: 70px 0 0 0;
+        float: left;
+    }
 
-.contacts {
-    width: 29%;
-    float: left;
-    padding: 70px 0 0 70px;
-}
+    .contacts {
+        width: 29%;
+        float: left;
+        padding: 70px 0 0 70px;
+    }
 
-.footerMenu {
-    width: 21%;
-    float: left;
-}
+    .footerMenu {
+        width: 21%;
+        float: left;
+    }
 
-.emailForm h5,
-.contacts h5 {
-    font-size: 1.6rem;
-}
+    .emailForm h5,
+    .contacts h5 {
+        font-size: 1.6rem;
+    }
 
-.emailForm p,
-.contacts p,
-input[placeholder] {
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
+    .emailForm p,
+    .contacts p,
+    input[placeholder] {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
 
-.emailForm p,
-.contacts p {
-    padding-top: 10px;
-}
+    .emailForm p,
+    .contacts p {
+        padding-top: 10px;
+    }
 
-.emailForm form {
-    padding-top: 13px;
-}
+    .emailForm form {
+        padding-top: 13px;
+    }
 
-input[type=email] {
-    height: 40px;
-    width: 75%;
-}
+    input[type=email] {
+        height: 40px;
+        width: 75%;
+    }
 
-input[placeholder] {
-    padding-left: 20px;
-    /* font-size: 1.2rem; */
-    font-family: 'Roboto', sans-serif;
-}
+    input[placeholder] {
+        padding-left: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
 
-input[type=submit] {
-    width: 25%;
-    float: right;
-    height: 40px;
-    background-color: black;
-    border: none;
-    color: white;
-    font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 0.8rem;
-    /* text-align: center; */
-    /* display: block; */
-    /* padding: 0 !important; */
-    /* border: 1px solid red; */
-}
+    input[type=submit] {
+        width: 25%;
+        float: right;
+        height: 40px;
+        background-color: black;
+        border: none;
+        color: white;
+        font-family: 'Cormorant Garamond', sans-serif;
+        font-size: 0.8rem;
+    }
 
-.contacts span {
-    display: block;
-}
+    .contacts span {
+        display: block;
+    }
 
-.contacts p {
-    line-height: 140%;
-}
-
-
-
+    .contacts p {
+        line-height: 140%;
+    }
 
 
 
 /* footerMenu styles */
-.footerMenu {
-    font-family: 'Roboto', sans-serif;
-    padding: 70px 0 0 0;
-    text-align: right;
-    font-size: 1.3rem;
-}
+    .footerMenu {
+        font-family: 'Roboto', sans-serif;
+        padding: 70px 0 0 0;
+        text-align: right;
+        font-size: 1.3rem;
+    }
 
-.footerMenu li {
-    margin-bottom: 7px;
-}
+    .footerMenu li {
+        margin-bottom: 7px;
+    }
 
-.footerMenu a {
-    text-decoration: none;
-    color: black;
-    
-}
-
-
-
+    .footerMenu a {
+        text-decoration: none;
+        color: black;
+        
+    }
 
 
 
 /* Copyrights section at the bottom */
-.footerCopyrights {
-    height: 2rem;
-    background-color: rgb(172, 172, 172);
-    text-align: center;
-}
+    .footerCopyrights {
+        height: 2rem;
+        background-color: rgb(172, 172, 172);
+        text-align: center;
+    }
 
-.footerCopyrights p {
-    padding-top: 10px;
-    font-size: 1rem !important;
-}
+    .footerCopyrights p {
+        padding-top: 10px;
+        font-size: 1rem !important;
+    }
 
 
 
 /* important */
-p {
-    font-family: 'Roboto', sans-serif !important;
-    color: rgba(53, 53, 53, 0.715) !important;
-    font-size: 1.4rem !important;
+    p {
+        font-family: 'Roboto', sans-serif !important;
+        color: rgba(53, 53, 53, 0.715) !important;
+        font-size: 1.4rem !important;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 1.8rem !important;
+    }
+    .footerGrey p {
+        font-size: 1.1rem !important;
+    }
+
+
+
+/* media queries */
+@media (max-width: 1439px) {
+    .highlightsImage {
+        width: 35%;
+    }
+    .contentBox {
+        width: calc(65% - 20px);
+    }
+    .contentBox h3 {
+        font-size: 2.4rem;
+    }
+    .contentBox p {
+        font-size: 1.8rem;
+    }
+
+
+    /* footerGrey styles */
+    .contacts {
+        padding: 70px 0 0 20px;
+        width: 35%;
+    }
+    
+    .footerMenu {
+        width: 15%;
+    }
 }
-h4 {
-    font-weight: 600;
-    font-size: 1.8rem !important;
+
+@media (max-width: 1340px) {
+    .textPhotoGallery {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 80%;
+    }
+
+    .article {
+        width: 35%;
+        float: right;
+        padding: 0 0 0 20px;
+    }
+
+    .blogImage.image1 {
+        width: 65%;
+        float: left;
+    }
+
+    .article h4 {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .article p {
+        padding-bottom: 40px;
+        width: 100%;
+    }
+
+    .article .readMoreButton {
+        padding-bottom: 60px;
+    }
+
+
+/* second row */
+    .blogImage.image2 {
+        width: 65%;
+        float: left;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .article.article2 {
+        width: 35%;
+        float: right;
+        padding: 0 0 0 20px;
+    }
+
+    .article.article2 h4 {
+        padding-top: 4rem;
+        width: 100%;
+    }
+    
+    .article.article2 p {
+        width: 100%;
+    }
+
+
 }
-.footerGrey p {
-    font-size: 1.1rem !important;
+
+@media (max-width: 1290px) {
+    .textPhotoGallery {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .blogImage.image1 {
+        width: 100%;
+        float: left;
+        order: 1;
+    }
+
+    .article {
+        width: 100%;
+        float: left;
+        order: 2;
+        padding-left: 0;
+    }
+
+    .article h4 {
+        padding-top: 2rem;
+    }
+
+    .blogImage.image2 {
+        width: 100%;
+        order: 3;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .article.article2 {
+        width: 100%;
+        order: 4;
+        padding-left: 0;
+    }
+
+    .article.article2 h4 {
+        padding-top: 2rem;
+    }
 }
+
+@media (max-width: 1230px) {
+    .highlightsImage {
+        width: 100%;
+        display: block;
+    }
+
+    .highlightsImage img {
+        max-width: 100%;
+    }
+
+/* QUESTION: I can't center the image inside of a div container. I tried playing around with padding, margin, text-align. Tried googling but everyone is suggesting to use flex-box */
+
+    .contentBox {
+        width: 100%;
+        display: block;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .footerMenu {
+        display: none;
+    }
+
+    .contacts {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-logo, .nav-menu, .social-icons {
+        display: none;
+    }
+
+    .wrapper.header {
+        position: relative;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        right: -2rem;
+        top: 2rem;
+        width: 55px;
+        height: 50px;
+        color: white;
+    }
+
+    .hamburgerMenu span {
+        background-color: white;
+        width: 100%;
+        height: 5px;
+        margin-bottom: 9px;
+        position: relative;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .iconAndText {
+        margin-top: 10%;
+    }
+
+    .wrapper.header h1 {
+        top: 64%;
+        font-size: 6.8rem;
+        line-height: 95%;
+    }
+
+    .gallery li {
+        width: calc((100%/2) - (40px/2));
+        margin-right: 20px;
+        display: block;
+    }
+
+    .gallery li:nth-child(3) {
+        display: none;
+    }
+
+
+    .gallery li:nth-child(2) {
+        margin-right: 0px;
+    }
+
+    .contentBox h3,
+    .contentBox p,
+    .contentBox .readMoreButton,
+    .article h4,
+    .article p,
+    .article .readMoreButton {
+        text-align: center;
+    }
+
+    .emailForm {
+        width: 100%;
+    }
+    .contacts {
+        width: 75%;
+        float: left;
+        padding-left: 0;
+        padding-bottom: 2rem;
+    }
+    .footerMenu {
+        display: block;
+        float: right;
+        width: 25%;
+    }
+
+    .contacts, .footerMenu {
+        padding-top: 3rem;
+    }
+
+    .footerCopyrights {
+        display: block;
+        float: right;
+        width: 100%;
+    }
+
+    .footerGrey {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .iconAndText {
+        margin-top: 15%;
+    }
+
+    .iconAndText a {
+        font-size: 3rem;
+    }
+
+    .iconAndText h4 {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width: 624px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    
+    .wrapper.header h1 {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 6rem;
+        line-height: 100%;
+        height: auto;
+    }
+
+    .wrapper.header span {
+        font-size: 10rem;
+    }
+
+    .footerBlue {
+        height: auto;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .iconAndText {
+        width: 100%;
+    }
+
+    .iconAndText:first-child {
+        margin-top: 10%;
+    }
+
+    .iconAndText:last-child {
+        margin-bottom: 10%;
+    }
+
+    .iconAndText i {
+        font-size: 4rem;
+    }
+
+    .iconAndText h4 {
+        padding-top: 1rem;
+    }
+
+    body p, .footerGrey p {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 570px) {
+    .wrapper.header h1 {
+        font-size: 5rem;
+    }
+
+    .wrapper.header span {
+        font-size: 9rem;
+    }
+
+    .footerMenu {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .wrapper.header h1 {
+        font-size: 4.5rem;
+        line-height: 85%;
+    }
+
+    .wrapper.header span {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper.header h1 {
+        font-size: 3.5rem;
+        line-height: 95%;
+        display: block;
+        text-align: center;
+    }
+    
+    .wrapper.header span {
+        font-size: 6rem;
+    }
+
+    input[type=email] {
+        width: 50%;
+    }
+
+    input[type=submit]{
+        width: 50%;
+    }
+
+    .footerMenu {
+        font-size: 1rem;
+    }
+
+    .contacts {
+        width: 70%;
+    }
+
+    .contacts p, .contacts span {
+        font-size: 0.8rem !important;
+    }
+}
+
