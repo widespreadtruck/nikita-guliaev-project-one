@@ -9,14 +9,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 
-
-
-
-
-
-
-/* My css starts */
-
 body {
     font-size: 62.5%;
     font-family: 'Cormorant Garamond', sans-serif;
@@ -27,6 +19,7 @@ body {
     max-width: 1280px;
     width: 80%;
 }
+
 .wrapper.header {
     height: 600px;
 }
@@ -46,8 +39,6 @@ img {
 .hamburgerMenu {
     display: none;
 }
-
-
 
 
 
@@ -82,8 +73,6 @@ img {
 
 
 
-
-
 /* h1 on the home page */
 .wrapper.header h1 {
     font-size: 8.8rem;
@@ -106,9 +95,6 @@ img {
 
 
 
-
-
-
 /* social icons */
 .social-icons {
     float: right;
@@ -126,8 +112,6 @@ img {
 
 
 
-
-
 /* newsArticles section */
 .newsArticles h2 {
     text-align: center;
@@ -140,15 +124,11 @@ img {
     width: calc((100%/3) - (40px/3));
     margin-right: 20px;
     display: block;
-
 }
 
 .gallery li:nth-child(3n + 3) {
     margin-right: 0px;
 }
-
-
-
 
 
 
@@ -172,14 +152,12 @@ img {
 }
 
 .contentBox h3 {
-    /* margin-top: 10px; */
     font-size: 2.3rem;
     padding-bottom: 20px;
 }
 
 .contentBox p {
     font-size: 1.6rem;
-    /* margin-bottom: 20px; */
     font-family: 'Roboto', sans-serif;
     padding-bottom: 40px;
     line-height: 120%;
@@ -192,12 +170,6 @@ img {
     padding: 12px 22px;
     font-size: 0.9rem;
 }
-
-
-
-/* NOTE: changed font size for h3 and p idividually in first media. Need to make all Ps and Headers the same size */
-/* ############################################ */
-
 
 
 
@@ -252,12 +224,6 @@ img {
 }
 
 
-/* ############################################ */
-
-
-
-
-
 
 /* Upper Footer styles (SHOP BRANDS, COMMUNITY, EVENTS) */
 .footerBlue.wrapper {
@@ -271,7 +237,6 @@ img {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
-    /* display: block; */
 }
 
 .iconAndText {
@@ -293,166 +258,144 @@ img {
     font-size: 1.6rem;
 }
 
+
+
 @media (max-width: 1340px) {
-.iconAndText h4 {
-    font-size: 1.3rem;
+    .iconAndText h4 {
+        font-size: 1.3rem;
+    }
 }
-}
-
-
-
-
-
 
 /* Middle part of the footer  */
-.footerGrey {
-    background-color: rgb(227, 227, 227);
-    height: 250px;
-}
+    .footerGrey {
+        background-color: rgb(227, 227, 227);
+        height: 250px;
+    }
 
-.footerGrey p {
-    font-size: 1.1rem !important;
-}
+    .footerGrey p {
+        font-size: 1.1rem !important;
+    }
 
-.footerGrey .wrapper.clearfix {
-    display: block;
-}
+    .footerGrey .wrapper.clearfix {
+        display: block;
+    }
 
-.emailForm {
-    width: 50%;
-    padding: 70px 0 0 0;
-    float: left;
-}
+    .emailForm {
+        width: 50%;
+        padding: 70px 0 0 0;
+        float: left;
+    }
 
-.contacts {
-    width: 29%;
-    float: left;
-    padding: 70px 0 0 70px;
-}
+    .contacts {
+        width: 29%;
+        float: left;
+        padding: 70px 0 0 70px;
+    }
 
-.footerMenu {
-    width: 21%;
-    float: left;
-}
+    .footerMenu {
+        width: 21%;
+        float: left;
+    }
 
-.emailForm h5,
-.contacts h5 {
-    font-size: 1.6rem;
-}
+    .emailForm h5,
+    .contacts h5 {
+        font-size: 1.6rem;
+    }
 
-.emailForm p,
-.contacts p,
-input[placeholder] {
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
+    .emailForm p,
+    .contacts p,
+    input[placeholder] {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
 
-.emailForm p,
-.contacts p {
-    padding-top: 10px;
-}
+    .emailForm p,
+    .contacts p {
+        padding-top: 10px;
+    }
 
-.emailForm form {
-    padding-top: 13px;
-}
+    .emailForm form {
+        padding-top: 13px;
+    }
 
-input[type=email] {
-    height: 40px;
-    width: 75%;
-}
+    input[type=email] {
+        height: 40px;
+        width: 75%;
+    }
 
-input[placeholder] {
-    padding-left: 20px;
-    /* font-size: 1.2rem; */
-    font-family: 'Roboto', sans-serif;
-}
+    input[placeholder] {
+        padding-left: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
 
-input[type=submit] {
-    width: 25%;
-    float: right;
-    height: 40px;
-    background-color: black;
-    border: none;
-    color: white;
-    font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 0.8rem;
-    /* text-align: center; */
-    /* display: block; */
-    /* padding: 0 !important; */
-    /* border: 1px solid red; */
-}
+    input[type=submit] {
+        width: 25%;
+        float: right;
+        height: 40px;
+        background-color: black;
+        border: none;
+        color: white;
+        font-family: 'Cormorant Garamond', sans-serif;
+        font-size: 0.8rem;
+    }
 
-.contacts span {
-    display: block;
-}
+    .contacts span {
+        display: block;
+    }
 
-.contacts p {
-    line-height: 140%;
-}
-
-
+    .contacts p {
+        line-height: 140%;
+    }
 
 
 
 /* footerMenu styles */
-.footerMenu {
-    font-family: 'Roboto', sans-serif;
-    padding: 70px 0 0 0;
-    text-align: right;
-    font-size: 1.3rem;
-}
+    .footerMenu {
+        font-family: 'Roboto', sans-serif;
+        padding: 70px 0 0 0;
+        text-align: right;
+        font-size: 1.3rem;
+    }
 
-.footerMenu li {
-    margin-bottom: 7px;
-}
+    .footerMenu li {
+        margin-bottom: 7px;
+    }
 
-.footerMenu a {
-    text-decoration: none;
-    color: black;
-    
-}
-
-
-
+    .footerMenu a {
+        text-decoration: none;
+        color: black;
+        
+    }
 
 
 
 /* Copyrights section at the bottom */
-.footerCopyrights {
-    height: 2rem;
-    background-color: rgb(172, 172, 172);
-    text-align: center;
-}
+    .footerCopyrights {
+        height: 2rem;
+        background-color: rgb(172, 172, 172);
+        text-align: center;
+    }
 
-.footerCopyrights p {
-    padding-top: 10px;
-    font-size: 1rem !important;
-}
+    .footerCopyrights p {
+        padding-top: 10px;
+        font-size: 1rem !important;
+    }
 
 
 
 /* important */
-p {
-    font-family: 'Roboto', sans-serif !important;
-    color: rgba(53, 53, 53, 0.715) !important;
-    font-size: 1.4rem !important;
-}
-h4 {
-    font-weight: 600;
-    font-size: 1.8rem !important;
-}
-.footerGrey p {
-    font-size: 1.1rem !important;
-}
-
-
-
-
-
-
-
-
-
+    p {
+        font-family: 'Roboto', sans-serif !important;
+        color: rgba(53, 53, 53, 0.715) !important;
+        font-size: 1.4rem !important;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 1.8rem !important;
+    }
+    .footerGrey p {
+        font-size: 1.1rem !important;
+    }
 
 
 
@@ -493,7 +436,7 @@ h4 {
     .article {
         width: 35%;
         float: right;
-    padding: 0 0 0 20px;
+        padding: 0 0 0 20px;
     }
 
     .blogImage.image1 {
@@ -548,9 +491,8 @@ h4 {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        /* used it to change the order.  */
-
     }
+
     .blogImage.image1 {
         width: 100%;
         float: left;
@@ -590,9 +532,8 @@ h4 {
     .highlightsImage {
         width: 100%;
         display: block;
-        /* padding: 0 auto; */
-        /* float: right; */
     }
+
     .highlightsImage img {
         max-width: 100%;
     }
@@ -616,7 +557,6 @@ h4 {
 }
 
 @media (max-width: 900px) {
-
     .nav-logo, .nav-menu, .social-icons {
         display: none;
     }
@@ -626,23 +566,23 @@ h4 {
     }
 
     .hamburgerMenu {
-    display: block;
-    position: absolute;
-    right: -2rem;
-    top: 2rem;
-    width: 55px;
-    height: 50px;
-    color: white;
+        display: block;
+        position: absolute;
+        right: -2rem;
+        top: 2rem;
+        width: 55px;
+        height: 50px;
+        color: white;
     }
 
     .hamburgerMenu span {
-    background-color: white;
-    width: 100%;
-    height: 5px;
-    margin-bottom: 9px;
-    position: relative;
-    display: block;
-    border-radius: 5px;
+        background-color: white;
+        width: 100%;
+        height: 5px;
+        margin-bottom: 9px;
+        position: relative;
+        display: block;
+        border-radius: 5px;
     }
 
     .iconAndText {
@@ -656,15 +596,14 @@ h4 {
     }
 
     .gallery li {
-    width: calc((100%/2) - (40px/2));
-    margin-right: 20px;
-    display: block;
-
+        width: calc((100%/2) - (40px/2));
+        margin-right: 20px;
+        display: block;
     }
 
-        .gallery li:nth-child(3) {
-            display: none;
-        }
+    .gallery li:nth-child(3) {
+        display: none;
+    }
 
 
     .gallery li:nth-child(2) {
@@ -679,7 +618,6 @@ h4 {
     .article .readMoreButton {
         text-align: center;
     }
-    /* QUESTION: why can't I remove the right margin? :( */
 
     .emailForm {
         width: 100%;
@@ -702,7 +640,6 @@ h4 {
 
     .footerCopyrights {
         display: block;
-        /* padding-top: 3rem; */
         float: right;
         width: 100%;
     }
@@ -710,34 +647,30 @@ h4 {
     .footerGrey {
         height: auto;
     }
-
-
 }
 
 @media (max-width: 768px) {
+    .iconAndText {
+        margin-top: 15%;
+    }
 
-.iconAndText {
-    margin-top: 15%;
-}
     .iconAndText a {
-    font-size: 3rem;
-}
+        font-size: 3rem;
+    }
 
-.iconAndText h4 {
-    font-size: 1.3rem !important;
-}
-
+    .iconAndText h4 {
+        font-size: 1.3rem !important;
+    }
 }
 
 @media (max-width: 624px) {
-    html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
     
     .wrapper.header h1 {
         padding: 0;
@@ -747,6 +680,7 @@ h4 {
         line-height: 100%;
         height: auto;
     }
+
     .wrapper.header span {
         font-size: 10rem;
     }
@@ -755,16 +689,16 @@ h4 {
         height: auto;
         background-size: cover;
         background-position: left;
-        
     }
 
     .iconAndText {
         width: 100%;
-
     }
+
     .iconAndText:first-child {
         margin-top: 10%;
     }
+
     .iconAndText:last-child {
         margin-bottom: 10%;
     }
@@ -780,14 +714,13 @@ h4 {
     body p, .footerGrey p {
         font-size: 1rem !important;
     }
-
-    /* QUESTION: Why do I have white space under my footer on mobile size? */
 }
 
 @media (max-width: 570px) {
     .wrapper.header h1 {
         font-size: 5rem;
     }
+
     .wrapper.header span {
         font-size: 9rem;
     }
@@ -800,25 +733,22 @@ h4 {
 @media (max-width: 470px) {
     .wrapper.header h1 {
         font-size: 4.5rem;
-                line-height: 85%;
-
+        line-height: 85%;
     }
+
     .wrapper.header span {
         font-size: 6rem;
     }
-
 }
 
 @media (max-width: 425px) {
-    .wrapper {
-    }
-        .wrapper.header h1 {
+    .wrapper.header h1 {
         font-size: 3.5rem;
         line-height: 95%;
         display: block;
         text-align: center;
-
     }
+    
     .wrapper.header span {
         font-size: 6rem;
     }
